@@ -7,7 +7,9 @@ project(nextage_ros_seqplay_util)
 find_package(catkin REQUIRED COMPONENTS
   nextage_description
   nextage_ros_bridge
+  hrpsys_ros_bridge
   rospy
+  roscpp
   tf
 )
 
@@ -82,7 +84,7 @@ generate_messages(
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES nextage_ros_seqplay_util
- CATKIN_DEPENDS nextage_description nextage_ros_bridge rospy tf
+ CATKIN_DEPENDS nextage_description nextage_ros_bridge rospy roscpp tf hrpsys_ros_bridge
 #  DEPENDS system_lib
 )
 
@@ -103,16 +105,16 @@ include_directories(
 # )
 
 ## Declare a cpp executable
-# add_executable(nextage_ros_seqplay_util_node src/nextage_ros_seqplay_util_node.cpp)
+ add_executable(sample src/sample.cpp)
 
 ## Add cmake target dependencies of the executable/library
 ## as an example, message headers may need to be generated before nodes
-# add_dependencies(nextage_ros_seqplay_util_node nextage_ros_seqplay_util_generate_messages_cpp)
+ add_dependencies(sample nextage_ros_seqplay_util_generate_messages_cpp)
 
 ## Specify libraries to link a library or executable target against
-# target_link_libraries(nextage_ros_seqplay_util_node
-#   ${catkin_LIBRARIES}
-# )
+ target_link_libraries(sample
+   ${catkin_LIBRARIES}
+ )
 
 #############
 ## Install ##
@@ -123,10 +125,10 @@ include_directories(
 
 ## Mark executable scripts (Python etc.) for installation
 ## in contrast to setup.py, you can choose the destination
- install(PROGRAMS
-   src/seqplay_util_server.py
-   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
-)
+# install(PROGRAMS
+#   scripts/my_python_script
+#   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+# )
 
 ## Mark executables and/or libraries for installation
 # install(TARGETS nextage_ros_seqplay_util nextage_ros_seqplay_util_node
