@@ -2,7 +2,7 @@ nextage_ros_seqplay_util
 ========================
 
 ROS package of SequencePlayer utility for NEXTAGE OPEN
-
+Cで第四回
 Build
 -----
 
