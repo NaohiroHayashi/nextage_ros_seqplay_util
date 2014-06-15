@@ -6,6 +6,7 @@ ROS package of SequencePlayer utility for NEXTAGE OPEN
 近藤さんのROS勉強記第4回にあるサービスを呼ぶサンプルをCで書いたやつです.
 
 packageにhrpsys_ros_bridgeを追加しています.
+
 僕もわからないのですが、goInitial,/goOffPose,/setTargetPoseRelativeのサービスは動作が成功していても
 client.call(srv)がfalseを返してくるので、エラー処理を飛ばしています.
 
