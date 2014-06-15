@@ -7,7 +7,6 @@ project(nextage_ros_seqplay_util)
 find_package(catkin REQUIRED COMPONENTS
   nextage_description
   nextage_ros_bridge
-  hrpsys_ros_bridge
   rospy
   roscpp
   tf
@@ -84,7 +83,7 @@ generate_messages(
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES nextage_ros_seqplay_util
- CATKIN_DEPENDS nextage_description nextage_ros_bridge rospy roscpp tf hrpsys_ros_bridge
+# CATKIN_DEPENDS nextage_description nextage_ros_bridge rospy roscpp tf
 #  DEPENDS system_lib
 )
 
