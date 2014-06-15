@@ -3,9 +3,9 @@ nextage_ros_seqplay_util
 
 ROS package of SequencePlayer utility for NEXTAGE OPEN
 
-近藤さんのROS勉強記第4回にあるサービスを呼ぶpythonサンプルをC++形式で書いたやつ(src/sample.cpp)です.
+近藤さんのROS勉強記第4回にあるサービスを呼ぶpythonサンプルをC++形式で書いたサービスクライアント(src/sample.cpp)です.
 
-packageにhrpsys_ros_bridgeを追加しています.
+clientを生成するためにCmakeList.txtのbuildを編集しています。
 
 僕もわからないのです, goInitial, /goOffPose, /setTargetPoseRelativeのサービスは動作が成功していても
 client.call(srv)がfalseを返してくるので、エラー処理を飛ばしています.
