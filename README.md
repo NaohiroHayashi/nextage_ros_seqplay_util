@@ -7,7 +7,7 @@ ROS package of SequencePlayer utility for NEXTAGE OPEN
 
 packageにhrpsys_ros_bridgeを追加しています.
 
-僕もわからないのですが、goInitial,/goOffPose,/setTargetPoseRelativeのサービスは動作が成功していても
+僕もわからないのです, goInitial, /goOffPose, /setTargetPoseRelativeのサービスは動作が成功していても
 client.call(srv)がfalseを返してくるので、エラー処理を飛ばしています.
 
 Build
