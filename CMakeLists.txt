@@ -14,17 +14,17 @@ find_package(catkin REQUIRED COMPONENTS
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
 
+###############
+## Declare ROS messages, services and actions ##
+################################################
 
+## To declare and build messages,
 ## Uncomment this if the package has a setup.py. This macro ensures
 ## modules and global scripts declared therein get installed
 ## See http://ros.org/doc/api/catkin/html/user_guide/setup_dot_py.html
 # catkin_python_setup()
 
-################################################
-## Declare ROS messages, services and actions ##
-################################################
-
-## To declare and build messages, services or actions from within this
+################################# services or actions from within this
 ## package, follow these steps:
 ## * Let MSG_DEP_SET be the set of packages whose message types you use in
 ##   your messages/services/actions (e.g. std_msgs, actionlib_msgs, ...).
@@ -113,7 +113,7 @@ include_directories(
 # target_link_libraries(nextage_ros_seqplay_util_node
 #   ${catkin_LIBRARIES}
 # )
-
+ 
 #############
 ## Install ##
 #############
