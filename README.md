@@ -3,7 +3,7 @@ nextage_ros_seqplay_util
 
 ROS package of SequencePlayer utility for NEXTAGE OPEN
 
-近藤さんのROS勉強記第4回にあるサービスを呼ぶサンプルをCで書いたやつです.
+近藤さんのROS勉強記第4回にあるサービスを呼ぶpythonサンプルをC++形式で書いたやつ(src/sample.cpp)です.
 
 packageにhrpsys_ros_bridgeを追加しています.
 
