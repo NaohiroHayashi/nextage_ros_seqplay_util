@@ -1,3 +1,5 @@
+//Copyright (c) 2014 Naohiro Hayshi and ROS JAPAN Users Group ALL Rights Reserved 
+//Author Naohiro Hayashi 2014/06/15
 #include "ros/ros.h"
 #include <iostream>
 #include <nextage_ros_seqplay_util/goPose.h>
